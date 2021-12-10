@@ -1,0 +1,251 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS */
+body {
+	background-color: #2495f1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.panel {
+	width: 50%;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: end;
+	min-width: 900px;
+}
+
+.pricing-plan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid #f5f2f2;
+	padding: 0 1.3em;
+}
+
+.pricing-plan:last-child {
+	border-right: none;
+}
+
+.pricing-plan img {
+	width: 95%;
+	/* text-align: center; */
+}
+
+h2.pricing-header {
+	text-transform: uppercase;
+	color: grey;
+	font-weight: 700;
+	margin: 1.2em 0 1em 0;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+ul.pricing-features {
+	text-align: center;
+	font-weight: 900;
+	color: #2495f1;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	line-height: 1.3em;
+}
+
+li.pricing-features-item {
+	margin: 1em 0;
+	padding: 0.4em 0;
+	border-top: 1px solid #f5f2f2;
+	border-bottom: 1px solid #f5f2f2;
+	letter-spacing: 1px;
+}
+
+span.pricing-price {
+	margin: 20px 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #2495f1;
+	font-size: 2em;
+}
+
+a.pricing-button {
+	text-transform: uppercase;
+	padding: 0.7em 2em;
+	color: #2495f1;
+	background-color: #fff;
+	border: 1px solid #2495f1;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: box-shadow 0.3s, transform 0s;
+	margin-bottom: 1em;
+}
+
+a.pricing-button.is-featured {
+	color: #fff;
+	background-color: #2495f1;
+}
+
+a.pricing-button:hover {
+	box-shadow: 0.1em 0.2em 0.6em #2495f1;
+	transform: translateY(1px);
+}
+
+/* Mobile screens */
+@media (max-width: 980px) {
+	.panel {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pricing-plan {
+		border-right: none;
+		border-bottom: 1px solid #f5f2f2;
+	}
+
+	.pricing-plan img {
+		width: 100%;
+	}
+
+	.pricing-plan:last-child {
+		border-bottom: none;
+	}
+}
